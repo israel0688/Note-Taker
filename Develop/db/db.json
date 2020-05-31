@@ -1,9 +1,19 @@
 {
-    "notes": [
-        {
-        "title":"Test Title",
-        "text":"Test text", 
-        "id": "test_id"
-        }
-    ]
+  "notes": [
+    {
+      "title": "Test Title",
+      "text": "Test text",
+      "id": "0"
+    },
+    {
+      "title": "Finish assignment",
+      "text": "Understand project and finish it",
+      "id": "1"
+    },
+    {
+      "title": "Get Ahead",
+      "text": "Get ahead for next weeks module",
+      "id": "2"
+    }
+  ]
 }
