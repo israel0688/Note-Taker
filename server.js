@@ -9,9 +9,18 @@ const { notes } = require('./Develop/db/db.json');
 app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
+app.use(express.static('Develop/public'));
 
 app.get('/api/notes', (req, res) => {
     res.json(notes);
+});
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './Develop/public/index.html'));
+});
+
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './Develop/public/notes.html'));
 });
 
 app.post('/api/notes', (req, res) => {
